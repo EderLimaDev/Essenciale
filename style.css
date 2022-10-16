@@ -194,6 +194,51 @@ header{
 
 /* fim produtos */
 
+/* cursos */
+
+.container-cursos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    min-width: 512px;
+}
+
+.cursos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 650px;
+    margin: 20px;
+}
+
+/* fim cursos */
+
+/* terapias */
+
+.container-terapias{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    min-width: 512px;
+}
+
+.terapias{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 650px;
+    margin: 20px;
+}
+
+.terapias ul{
+    margin-top: 30px;
+}
+
+
 
 
 
