@@ -11,8 +11,10 @@ header{
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
+    background-color: #D9D9D9;
     box-shadow: 0px 5px 20px black;
     padding: 10px 0px;
+    min-width: 512px;
 }
 
 .conteiner-menu-l-logo{
@@ -27,7 +29,7 @@ header{
 
 .menu-lado-btn i{
     font-size: 35px;
-    color: rgb(90, 2, 90);
+    color: black;
 }
 
 .menu ul{
@@ -44,43 +46,102 @@ header{
 
 .menu li a{
     text-decoration: none;
-    color: purple;
+    color: black;
     font-size: 15px;
-    font-weight: bold;
+    font-weight: normal;
 }
 
 .menu li a:hover{
     color: rgb(58, 62, 66);
-    font-size: 16px;
 }
 
 .menu ul i{
     font-size: 20px;
-    color: rgb(90, 2, 90);
+    color: black;
 }
 
 .logo{
     align-self: center;
-    margin: 0px 15px;
-    font-size: 12px;
+    margin: 0px 10px;
 }
 
 .logo a{
     text-decoration: none;
-    color: purple;
+    font-size: 12px;
+    font-weight: 100;
+    color: black;
 }
 
 .logo a:hover{
     color: rgb(58, 62, 66);
-    font-size: 12px;
 }
 
 
 /* Fim da header */
 
+/* fale conosco / contato */
+
+.container-fale-conosco{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    min-width: 512px;
+}
+
+.conteudo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 650px;
+    height: 350px;
+    margin: 30px;
+    background-color: #EEE8E8;
+}
+
+.conteudo h1{
+    font-size: 38px;
+}
+
+.conteudo h2{
+    font-size: 20px;
+}
+
+.conteudo p{
+    margin: 30px 0px;
+    font-size: 17px;
+}
+
+.conteudo button{
+    background-color: #6DF07A;
+    padding: 15px 25px;
+    border-radius: 15px;
+    font-size: 15px;
+    border: 1px solid black;
+}
+
+.conteudo button:hover{
+    transform: scale(1.05);
+}
+
+.conteudo button:active{
+    transform: scale(1.0);
+    background-color: #4abe56;
+}
+
+/* fim fale conosco / contato */
+
+
+
+
+
 
 /* Responsividade */
 @media screen and (max-width: 760px){
+
+    /* header */
     .conteiner-menu-l-logo{
         width: 100%;
         margin-bottom: 5px;
@@ -90,5 +151,18 @@ header{
         display: flex;
         justify-content: center;
         width: 100%;
+    }
+
+    /* fale conosco / contato */
+    .conteudo h1{
+        font-size: 35px;
+    }
+
+    .conteudo button{
+        background-color: #6DF07A;
+        padding: 15px 20px;
+        border-radius: 15px;
+        font-size: 20px;
+        border: 1px solid black;
     }
 }
