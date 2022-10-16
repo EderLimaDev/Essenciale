@@ -86,7 +86,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 20px;
+    margin-top: 5px;
     min-width: 512px;
 }
 
@@ -133,7 +133,66 @@ header{
 
 /* fim fale conosco / contato */
 
+/* produtos */
 
+.container-produtos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    min-width: 512px;
+}
+
+.produtos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 650px;
+    margin: 20px;
+}
+
+.linha{
+    background-color: black;
+    width: 438px;
+    height: 2px;
+    margin-bottom: 10px;
+}
+
+.itens{
+    margin: 15px;
+}
+
+.itens ul{
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    
+}
+
+.itens ul li{
+    margin: 0px 7px;
+    width: 192px;
+}
+
+.itens ul li img{
+    width: 190px;
+}
+
+.itens ul li p{
+    margin: 2px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.itens ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+/* fim produtos */
 
 
 
@@ -164,5 +223,11 @@ header{
         border-radius: 15px;
         font-size: 20px;
         border: 1px solid black;
+    }
+
+    /* produtos */
+
+    .itens ul{
+        justify-content: center;
     }
 }
