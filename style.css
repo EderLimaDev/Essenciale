@@ -27,6 +27,12 @@ header{
     align-self: center;
 }
 
+.menu-lado-btn{
+    position: absolute;
+    visibility: hidden;
+    display: flex;
+}
+
 .menu-lado-btn i{
     font-size: 35px;
     color: black;
@@ -283,6 +289,15 @@ header{
     margin: 65px 0px;
 }
 
+.contato button:hover{
+    transform: scale(1.1);
+}
+
+.contato button:active{
+    transform: scale(1.0);
+    color: #696666;
+}
+
 .contato button h2{
     margin-left: 7px;
     font-size: 20px;
@@ -320,6 +335,15 @@ header{
     margin: 65px 0px;
 }
 
+.endereco button:hover{
+    transform: scale(1.1);
+}
+
+.endereco button:active{
+    transform: scale(1.0);
+    color: #696666;
+}
+
 .endereco button h2{
     margin-left: 7px;
     font-size: 20px;
@@ -346,21 +370,147 @@ header{
     margin: 30px 20px;
 }
 
+/* sidebar */
+.sidebar{
+    width: 350px;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: -350px;
+    background-color: #C3B1B1;
+    visibility: hidden;
+    transition: all 0.5s ease;
+}
+
+.sidebar.active{
+    left: 0px;
+    visibility: visible;
+    width: 370px;
+}
+
+.sidebar .btn-close-menu{
+    display: flex;
+    font-size: 45px;
+    
+}
+
+
+.sidebar .logo-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+
+.logo p{
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.sidebar .search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.sidebar .search input{
+    width: 310px;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 15px;
+    padding-left: 5px;
+    outline: thick;
+}
+
+.sidebar .search input:hover{
+    transform: scale(1.02);
+}
+
+.sidebar .search i{
+    font-size: 27px;
+    margin-left: 7px;
+}
+
+.sidebar .nav a{
+    color: black;
+}
+
+.sidebar .nav a:hover{
+    transform: scale(1.1);
+}
+
+.sidebar .nav ul{
+    margin: 15px;
+    list-style: none;
+}
+
+.sidebar .nav li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #a5a1a1;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 17px;
+    margin: 20px 0px;
+}
+
+.sidebar .nav li:hover{
+    transform: scale(1.05);
+}
+
+.sidebar .nav li a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+    border-radius: 17px;
+    
+}
+
+.sidebar .nav li a span{
+    font-size: 17px;
+    color: black;
+}
+
+.sidebar .nav li a i{
+    font-size: 18px;
+    color: black;
+
+}
 
 
 /* Responsividade */
-@media screen and (max-width: 760px){
+@media screen and (max-width: 762px){
 
     /* header */
     .conteiner-menu-l-logo{
+        display: flex;
+        justify-content: center;
+        margin: 5px 0px;
         width: 100%;
-        margin-bottom: 5px;
+    }
+
+    .logo{
+        width: auto;
+        text-align: center;
+        margin-right: 20px;
+    }
+
+    .menu-lado-btn{
+        margin-left: 2%;
+        position: absolute;
+        left: 0;
+        visibility: visible;
     }
 
     .container-menu{
-        display: flex;
-        justify-content: center;
-        width: 100%;
+        display: none;
     }
 
     /* fale conosco / contato */
@@ -377,8 +527,8 @@ header{
     }
 
     /* produtos */
-
     .itens ul{
         justify-content: center;
     }
+    
 }
